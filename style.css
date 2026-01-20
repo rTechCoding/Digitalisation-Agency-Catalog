@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+  font-family: Inter, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #fff;
+  color: #0f172a;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 40px 20px;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+}
+
+.subtitle {
+  text-align: center;
+  max-width: 800px;
+  margin: 10px auto 30px;
+  color: #475569;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.tab {
+  padding: 10px 18px;
+  border-radius: 20px;
+  border: 1px solid #e2e8f0;
+  background: #fff;
+  cursor: pointer;
+}
+
+.tab.active {
+  background: #0f172a;
+  color: #fff;
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 30px;
+}
+
+.cards .card {
+  background: #f8fafc;
+  padding: 20px;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+}
+
+.card h3 {
+  margin: 0 0 5px;
+}
+
+.card a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.card ul {
+  padding: 0;
+  list-style: none;
+  margin-top: 15px;
+}
+
+.card li {
+  margin-bottom: 8px;
+  color: #334155;
+}
+
+.panel {
+  display: flex;
+  align-items: center;
+}
+
+.panel-content {
+  display: none;
+}
+
+.panel-content.active {
+  display: block;
+}
+
+.panel h2 {
+  font-size: 32px;
+}
+
+.panel p {
+  color: #475569;
+  margin: 15px 0 25px;
+}
+
+.primary-btn {
+  background: #0f172a;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .content-grid {
+    grid-template-columns: 1fr;
+  }
+}
