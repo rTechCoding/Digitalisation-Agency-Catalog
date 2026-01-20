@@ -1,1 +1,36 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Catalog Tabs Layout</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<section class="container">
+  <h1>Digitalisation that delivers real business value</h1>
+  <p class="subtitle">
+    Move from disconnected manual processes to a fully digital intelligent operating model.
+  </p>
+
+  <!-- TABS -->
+  <div class="tabs">
+    <button class="tab active" data-tab="agency">Agency Catalog</button>
+    <button class="tab" data-tab="reporting">White Label Reporting</button>
+    <button class="tab" data-tab="leads">Lead Generator</button>
+    <button class="tab" data-tab="white">White Label</button>
+    <button class="tab" data-tab="clients">Client Seats</button>
+  </div>
+
+  <!-- SINGLE LAYOUT -->
+  <div class="content-grid">
+    <div class="cards" id="leftContent"></div>
+    <div class="panel" id="rightContent"></div>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
